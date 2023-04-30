@@ -18,7 +18,7 @@ export default function ProductPage({ product }) {
       `Adding ${count} item${count > 1 ? "s" : ""} to cart...`
     );
     addItem(product, { count });
-    toast.success(`${count} ${product.name}${count < 1 ? "s" : ""} added`, {
+    toast.success(`${count} ${product.name}${count > 1 ? "s" : ""} added`, {
       id,
     });
   }
