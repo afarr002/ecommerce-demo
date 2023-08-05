@@ -35,5 +35,5 @@ export default async function handler(req, res) {
   } else {
     res.setHeader("Allow", "POST");
     res.status(405).end("Method Not Allowed");
-  } // makes it so only POST api requests are allowed
+  }
 }
